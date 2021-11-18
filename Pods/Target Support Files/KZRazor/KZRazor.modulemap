@@ -1,0 +1,6 @@
+framework module KZRazor {
+  umbrella header "KZRazor-umbrella.h"
+
+  export *
+  module * { export * }
+}
