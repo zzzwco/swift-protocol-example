@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import KZRazor
 
 class TabController: UITabBarController {
 
@@ -30,5 +31,9 @@ class BaseController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view.backgroundColor = .white
+  }
+  
+  deinit {
+    KZPrint.log(message: self, printType: .objDeinit)
   }
 }

@@ -8,12 +8,25 @@
 import Foundation
 import UIKit
 
-enum Router {
+class Router {
+  static let shared = Router()
+  
+  func route(to target: Routable) {
+    switch target.method {
+    case .push:
+      UIApplication.navigationController?.pushViewController(target.detination, animated: true)
+    case .present:
+      UIApplication.topViewController?.present(target.detination, animated: true, completion: nil)
+    }
+  }
+}
+
+enum TestRouter {
   case pageA
   case pageB(params: String)
 }
 
-extension Router: Routable {
+extension TestRouter: Routable {
   
   var detination: UIViewController {
     switch self {

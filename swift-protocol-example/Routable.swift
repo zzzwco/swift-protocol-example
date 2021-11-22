@@ -13,20 +13,6 @@ public protocol Routable {
   var detination: UIViewController { get }
   
   var method: RouteMethod { get }
-  
-  func route()
-}
-
-public extension Routable {
-  
-  func route() {
-    switch self.method {
-    case .push:
-      UIApplication.navigationController?.pushViewController(self.detination, animated: true)
-    case .present:
-      UIApplication.topViewController?.present(self.detination, animated: true, completion: nil)
-    }
-  }
 }
 
 public enum RouteMethod {
