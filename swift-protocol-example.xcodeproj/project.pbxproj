@@ -14,9 +14,10 @@
 		32D8C15C2744FEF400AF7A4C /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8C15B2744FEF400AF7A4C /* ButtonController.swift */; };
 		32D8C15E2744FEFB00AF7A4C /* RouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8C15D2744FEFB00AF7A4C /* RouterController.swift */; };
 		32D8C16027450D4600AF7A4C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8C15F27450D4600AF7A4C /* Button.swift */; };
-		32D8C16227464B8700AF7A4C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8C16127464B8700AF7A4C /* Router.swift */; };
 		32D8C16427464BAD00AF7A4C /* AController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8C16327464BAD00AF7A4C /* AController.swift */; };
 		32D8C16627464BB200AF7A4C /* BController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8C16527464BB200AF7A4C /* BController.swift */; };
+		32EEDAE9274B386A007E0103 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EEDAE8274B3869007E0103 /* Routable.swift */; };
+		32EEDAEB274B7032007E0103 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EEDAEA274B7031007E0103 /* Router.swift */; };
 		9D2DA05C79255005F0DFB1C4 /* Pods_swift_protocol_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E15930B0DEF649A0659BD01 /* Pods_swift_protocol_example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +31,10 @@
 		32D8C15B2744FEF400AF7A4C /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
 		32D8C15D2744FEFB00AF7A4C /* RouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterController.swift; sourceTree = "<group>"; };
 		32D8C15F27450D4600AF7A4C /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		32D8C16127464B8700AF7A4C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		32D8C16327464BAD00AF7A4C /* AController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AController.swift; sourceTree = "<group>"; };
 		32D8C16527464BB200AF7A4C /* BController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BController.swift; sourceTree = "<group>"; };
+		32EEDAE8274B3869007E0103 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		32EEDAEA274B7031007E0103 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8E15930B0DEF649A0659BD01 /* Pods_swift_protocol_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_protocol_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F816BBBD2CD3F831A97515 /* Pods-swift-protocol-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-protocol-example.debug.xcconfig"; path = "Target Support Files/Pods-swift-protocol-example/Pods-swift-protocol-example.debug.xcconfig"; sourceTree = "<group>"; };
 		A765F8076041047B03AE4FBA /* Pods-swift-protocol-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-protocol-example.release.xcconfig"; path = "Target Support Files/Pods-swift-protocol-example/Pods-swift-protocol-example.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +80,8 @@
 				32D8C16327464BAD00AF7A4C /* AController.swift */,
 				32D8C16527464BB200AF7A4C /* BController.swift */,
 				32D8C15F27450D4600AF7A4C /* Button.swift */,
-				32D8C16127464B8700AF7A4C /* Router.swift */,
+				32EEDAE8274B3869007E0103 /* Routable.swift */,
+				32EEDAEA274B7031007E0103 /* Router.swift */,
 				32C276CE273E176A004055AF /* Assets.xcassets */,
 				32C276D0273E176A004055AF /* LaunchScreen.storyboard */,
 				32C276D3273E176A004055AF /* Info.plist */,
@@ -221,9 +224,10 @@
 				32D8C16027450D4600AF7A4C /* Button.swift in Sources */,
 				32D8C16627464BB200AF7A4C /* BController.swift in Sources */,
 				32D8C15A2744FC8900AF7A4C /* TabController.swift in Sources */,
+				32EEDAEB274B7032007E0103 /* Router.swift in Sources */,
 				32D8C15C2744FEF400AF7A4C /* ButtonController.swift in Sources */,
-				32D8C16227464B8700AF7A4C /* Router.swift in Sources */,
 				32D8C16427464BAD00AF7A4C /* AController.swift in Sources */,
+				32EEDAE9274B386A007E0103 /* Routable.swift in Sources */,
 				32C276C6273E1768004055AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

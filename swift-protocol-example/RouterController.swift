@@ -58,9 +58,9 @@ class RouterController: BaseController {
   @objc func push(sender: UIButton) {
     switch sender.tag {
     case 0:
-      Router.shared.route(to: .pageA)
+      Router.pageA.route()
     case 1:
-      Router.shared.route(to: .pageB(params: textView.text))
+      Router.pageB(params: textView.text).route()
     default:
       break
     }
