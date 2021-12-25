@@ -58,9 +58,12 @@ class RouterController: BaseController {
   @objc func push(sender: UIButton) {
     switch sender.tag {
     case 0:
-      Router.shared.route(to: TestRouter.pageA)
+      Router.shared.open(Router1.pageA, transition: .automatic(.present), fromVc: nil, completion: nil)
     case 1:
-      Router.shared.route(to: TestRouter.pageB(params: textView.text))
+      Router.shared.open(Router1.pageB(params: textView.text),
+                         transition: .push(animator: FadeAnimator(duration: 2)), fromVc: nil) {
+        print("Did push")
+      }
     default:
       break
     }

@@ -10,12 +10,5 @@ import UIKit
 
 public protocol Routable {
   
-  var detination: UIViewController { get }
-  
-  var method: RouteMethod { get }
-}
-
-public enum RouteMethod {
-  case push
-  case present
+  var destination: UIViewController { get }
 }

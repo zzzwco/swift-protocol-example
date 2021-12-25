@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329A1A672775C04400363135 /* Router1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A1A662775C04400363135 /* Router1.swift */; };
+		329A1A692775D1A600363135 /* PopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329A1A682775D1A600363135 /* PopTransition.swift */; };
+		32BDA5972774484700A05D01 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BDA5962774484700A05D01 /* Transition.swift */; };
+		32BDA5992774642500A05D01 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BDA5982774642500A05D01 /* PushTransition.swift */; };
+		32BDA59D27746F5700A05D01 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BDA59C27746F5700A05D01 /* Animator.swift */; };
+		32BDA5A127746FE000A05D01 /* FadeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BDA5A027746FE000A05D01 /* FadeAnimator.swift */; };
+		32BDA5A52774804200A05D01 /* DefaultTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BDA5A42774804200A05D01 /* DefaultTransition.swift */; };
 		32C276C6273E1768004055AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C276C5273E1768004055AF /* AppDelegate.swift */; };
 		32C276CF273E176A004055AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C276CE273E176A004055AF /* Assets.xcassets */; };
 		32C276D2273E176A004055AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C276D0273E176A004055AF /* LaunchScreen.storyboard */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		329A1A662775C04400363135 /* Router1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router1.swift; sourceTree = "<group>"; };
+		329A1A682775D1A600363135 /* PopTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopTransition.swift; sourceTree = "<group>"; };
+		32BDA5962774484700A05D01 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		32BDA5982774642500A05D01 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		32BDA59C27746F5700A05D01 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		32BDA5A027746FE000A05D01 /* FadeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimator.swift; sourceTree = "<group>"; };
+		32BDA5A42774804200A05D01 /* DefaultTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTransition.swift; sourceTree = "<group>"; };
 		32C276C2273E1768004055AF /* swift-protocol-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-protocol-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C276C5273E1768004055AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C276CE273E176A004055AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +66,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32BDA5942774439500A05D01 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				32D8C15B2744FEF400AF7A4C /* ButtonController.swift */,
+				32D8C15F27450D4600AF7A4C /* Button.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		32BDA595277443A200A05D01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				32D8C16327464BAD00AF7A4C /* AController.swift */,
+				32D8C16527464BB200AF7A4C /* BController.swift */,
+				32D8C15D2744FEFB00AF7A4C /* RouterController.swift */,
+				32EEDAE8274B3869007E0103 /* Routable.swift */,
+				329A1A662775C04400363135 /* Router1.swift */,
+				32EEDAEA274B7031007E0103 /* Router.swift */,
+				32BDA59F27746FC900A05D01 /* Animator */,
+				32BDA59E27746FBE00A05D01 /* Transition */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		32BDA59E27746FBE00A05D01 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				32BDA5962774484700A05D01 /* Transition.swift */,
+				32BDA5A42774804200A05D01 /* DefaultTransition.swift */,
+				32BDA5982774642500A05D01 /* PushTransition.swift */,
+				329A1A682775D1A600363135 /* PopTransition.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		32BDA59F27746FC900A05D01 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				32BDA59C27746F5700A05D01 /* Animator.swift */,
+				32BDA5A027746FE000A05D01 /* FadeAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
 		32C276B9273E1768004055AF = {
 			isa = PBXGroup;
 			children = (
@@ -75,13 +133,8 @@
 			children = (
 				32C276C5273E1768004055AF /* AppDelegate.swift */,
 				32D8C1592744FC8900AF7A4C /* TabController.swift */,
-				32D8C15B2744FEF400AF7A4C /* ButtonController.swift */,
-				32D8C15D2744FEFB00AF7A4C /* RouterController.swift */,
-				32D8C16327464BAD00AF7A4C /* AController.swift */,
-				32D8C16527464BB200AF7A4C /* BController.swift */,
-				32D8C15F27450D4600AF7A4C /* Button.swift */,
-				32EEDAE8274B3869007E0103 /* Routable.swift */,
-				32EEDAEA274B7031007E0103 /* Router.swift */,
+				32BDA5942774439500A05D01 /* Button */,
+				32BDA595277443A200A05D01 /* Router */,
 				32C276CE273E176A004055AF /* Assets.xcassets */,
 				32C276D0273E176A004055AF /* LaunchScreen.storyboard */,
 				32C276D3273E176A004055AF /* Info.plist */,
@@ -220,10 +273,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BDA5A127746FE000A05D01 /* FadeAnimator.swift in Sources */,
+				329A1A692775D1A600363135 /* PopTransition.swift in Sources */,
+				32BDA5972774484700A05D01 /* Transition.swift in Sources */,
+				32BDA5A52774804200A05D01 /* DefaultTransition.swift in Sources */,
 				32D8C15E2744FEFB00AF7A4C /* RouterController.swift in Sources */,
+				32BDA5992774642500A05D01 /* PushTransition.swift in Sources */,
 				32D8C16027450D4600AF7A4C /* Button.swift in Sources */,
 				32D8C16627464BB200AF7A4C /* BController.swift in Sources */,
 				32D8C15A2744FC8900AF7A4C /* TabController.swift in Sources */,
+				32BDA59D27746F5700A05D01 /* Animator.swift in Sources */,
+				329A1A672775C04400363135 /* Router1.swift in Sources */,
 				32EEDAEB274B7032007E0103 /* Router.swift in Sources */,
 				32D8C15C2744FEF400AF7A4C /* ButtonController.swift in Sources */,
 				32D8C16427464BAD00AF7A4C /* AController.swift in Sources */,

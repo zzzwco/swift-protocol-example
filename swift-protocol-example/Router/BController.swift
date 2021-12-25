@@ -30,5 +30,18 @@ class BController: BaseController {
       .kz.addToView(view) { make in
         make.center.equalToSuperview()
       }
+    
+    KZButton().kz.title("Dismiss")
+      .kz.addTarget(self, action: #selector(close), for: .touchUpInside)
+      .kz.addToView(view) { make in
+        make.centerX.equalToSuperview()
+        make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-50)
+      }
+  }
+  
+  @objc func close() {
+    Router.shared.close(self, transition: .pop(animator: FadeAnimator(duration: 2))) {
+      print("Did pop")
+    }
   }
 }
