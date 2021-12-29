@@ -64,6 +64,10 @@ class RouterController: BaseController {
                          transition: .push(animator: FadeAnimator(duration: 2)), fromVc: nil) {
         print("Did push")
       }
+      
+      // animator 传参，这里是直接使用的 FadeAnimator 实例
+      // 笔者尝试过使用 extenstion Animator 的方式增加点语法调用，比如 .fade(duration: 2)
+      // 编译器始终无法通过。。。这里作了妥协，如果有更优雅的实现，欢迎交流
     default:
       break
     }
